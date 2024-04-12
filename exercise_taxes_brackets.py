@@ -10,7 +10,12 @@ income = float(input("Enter income: "))
 
 #If statement to check if the income is less the 20,000. No taxes need to pay.
 if income < 20000:
-    print("You don't have to pay taxes!")
+    taxes = 0
 
 elif income <=50000:
-    print("")
+    taxes = 0.3 * income
+
+else:
+    taxes = 0.6 * income
+
+print("You have to pay ${:.2f} in taxes".format(taxes))
