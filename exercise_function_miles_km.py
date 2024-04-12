@@ -8,13 +8,11 @@ Example output:
 12 miles is 19.200000000000003 kilometers
 131 miles is 209.60000000000002 kilometers"""
 
-#Function
+#Function for conversion to miles
 def convert(miles):
-    miles_km = 1.6*miles
-    return miles_km
+    print(miles,"Miles is",1.6*miles,"Kilometers")
 
-miles = int(input("Enter miles:"))
-
-convert_miles = convert(miles)
-
-print(miles, "Miles is", convert_miles, "kilometers")
+#Variable for convert with values
+convert(8)
+convert(12)
+convert(131)
